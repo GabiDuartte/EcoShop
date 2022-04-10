@@ -192,8 +192,8 @@ html, body {
   width: 90%;   
   padding: 18px 6% 50px 6%;
   margin: 0 0 10px 0;
-  background: greenyellow;
-  border: 1px solid rgba(0, 255, 34, 0.8);
+  background: rgb(223, 252, 210);
+  border: 1px solid  greenyellow;
    
   -webkit-box-shadow: 5px;
   border-radius: 5px;
