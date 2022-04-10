@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro/Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="teste.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+     
+    <div class="content">      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action=""> 
+          <h1>Login</h1>
+       
+          <p> 
+            <label for="nome_login">E-mail</label>
+            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+          </p>
+           
+          <p> 
+            <label for="email_login">Senha de acesso</label>
+            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+          </p>
+           
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+           
+          <p>
+            <input type="submit"  value="Entrar" />
+          </p>
+            <a href="#" class="recuperar_senha" onclick="msgm()">Esqueceu a senha?</a>
+            <script>
+              function msgm(){
+                alert("Um link foi enviado para o seu e-mail!")
+              }
+            </script>
+           
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+ 
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+           
+          <p>
+            <label for="dados-card">Dados Pessoais</label>
+         <input id="dados_cad" name="dados_cad" required="required" type="text" placeholder="nome" />
+         <input type="dados-card" name="dados-card" required="required" type="CPF" placeholder="CPF">
+         <input type="date" name="dados-card" required="required"  placeholder="dd/mm/aaaa">
+        </p>
+
+          <p> 
+            <label for="contato_cad">Contato</label>
+            <input id="contato_cad" name="contato_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+            <input type="contato_cad" name="contato_cad" type="Telefone" placeholder="Telefone">
+           
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+           
+           
+            <input type="submit" value="Cadastrar" onclick="msg()"/> 
+            <script>
+              function msg(){
+                alert("O link de confirmação foi enviado para seu e-mail")
+              }
+            </script>
+          
+           
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
