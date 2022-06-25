@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/estilo.css">
+  <title>EcoShop :: Cadastro</title>
+</head>
+
+<body>
+  <div class="d-flex flex-column wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success border-bottom shadow-sm m-md-3">
+      <div class="container">
+        <a href="#" class="navbar-brand"><b>EcoShop</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contato.html">Contato</a>
+            </li>
+          </ul>
+          <div class="align-self-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="/cadastro.html" class="nav-link text-white">Quero me cadastrar</a>
+              </li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link text-white">Entrar</a>
+              </li>
+              <li class="nav-item">
+                <span class="badge rounded-pill bg-light text-success position-absolute ms-3 mt-0 "
+                  title="5 produto(s) no carrinho"><small>5</small></span>
+                <a href="/carrinho.html" class="nav-link text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-fill">
+      <div class="container">
+        <h1>Informe seus dados, por favor</h1>
+        <hr>
+        <form class="mt-3">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <fieldset class="row gx-3">
+                <legend>Dados Pessoais</legend>
+                <div class="form-floating mb-3">
+                  <input class="form-control" type="text" id="txtNome" placeholder=" " autofocus />
+                  <label for="txtNome">Nome</label>
+                </div>
+                <div class="form-floating mb-3 col-md-6 col-xl-4">
+                  <input class="form-control" type="text" id="txtCPF" placeholder=" " />
+                  <label for="txtCPF">CPF</label>
+                </div>
+                <div class="form-floating mb-3 col-md-6 col-xl-4">
+                  <input class="form-control" type="date" id="txtDataNascimento" placeholder=" " />
+                  <label for="txtDataNascimento" class="d-inline d-sm-none d-md-inline d-lg-none">Data
+                    Nascimento</label>
+                  <label for="txtDataNascimento" class="d-none d-sm-inline d-md-none d-lg-inline">Data
+                    de Nascimento</label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Contatos</legend>
+                <div class="form-floating mb-3 col-md-8">
+                  <input class="form-control" type="email" id="txtEmail" placeholder=" " />
+                  <label for="txtEmail">E-mail</label>
+                </div>
+                <div class="form-floating mb-3 col-md-6">
+                  <input class="form-control" placeholder=" " type="text" id="txtTelefone" />
+                  <label for="txtTelefone">Telefone</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <fieldset class="row gx-3">
+                <legend>Endereço</legend>
+                <div class="form-floating mb-3 col-md-6 col-lg-4">
+                  <input class="form-control" type="text" id="txtCEP" placeholder=" " />
+                  <label for="txtCEP">CEP</label>
+                </div>
+                <div class="mb-3 col-md-6 col-lg-8 align-self-end">
+                  <textarea class="form-control text-muted bg-light" style="height: 58px; font-size: 14px;"
+                    disabled>Digite o CEP para buscarmos o endereço.</textarea>
+                </div>
+                <div class="clearfix"></div>
+                <div class="form-floating mb-3 col-md-4">
+                  <input class="form-control" type="text" id="txtNumero" placeholder=" " />
+                  <label for="txtNumero">Número</label>
+                </div>
+                <div class="form-floating mb-3 col-md-8">
+                  <input class="form-control" type="text" id="txtComplemento" placeholder=" " />
+                  <label for="txtComplemento">Complemento</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input class="form-control" type="text" id="txtReferencia" placeholder=" " />
+                  <label for="txtReferencia">Referência</label>
+                </div>
+              </fieldset>
+              <fieldset class="row gx-3">
+                <legend>Senha de Acesso</legend>
+                <div class="form-floating mb-3 col-lg-6">
+                  <input class="form-control" type="password" id="txtSenha" placeholder=" " />
+                  <label for="txtSenha">Senha</label>
+                </div>
+                <div class="form-floating mb-3 col-lg-6">
+                  <input class="form-control" type="password" id="txtConfirmacaoSenha" placeholder=" " />
+                  <label class="form-label" for="txtConfirmacaoSenha">Confirmação da Senha</label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <hr />
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Desejo receber informações sobre promoções.
+            </label>
+          </div>
+          <div class="mb-3 text-left">
+            <a class="btn btn-lg btn-light btn-outline-success" href="/">Cancelar</a>
+            <input type="button" id="signUp" value="Criar meu cadastro" class="btn btn-lg btn-success" />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="border-top text-muted bg-light">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-12 col-md-4 text-center">
+            &copy; 2022 - EcoShop <br> Rua Virtual Inexistente <br> CPNJ 99.999,999/0001-99
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <a href="/privacidade.html" class="text-decoration-none text-dark">Política de Privacidade</a><br>
+            <a href="/termos.html" class="text-decoration-none text-dark">Termos de Uso</a><br>
+            <a href="/quemsomos.html" class="text-decoration-none text-dark">Quem Somos</a><br>
+            <a href="/trocas.html" class="text-decoration-none text-dark">Trocas e Devoluções</a>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <a href="/contato.html" class="text-decoration-none text-dark">Contato pelo Site</a><br>
+            E-mail: <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">email@dominio.com</a><br>
+            Telefone: <a href="phone:129999766" class="text-decoration-none text-dark">(86) 9999-0000</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebase/8.10.1/firebase-firestore.js"></script>
+
+</body>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+  import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyA8e9J8fVDDJEPhiqSshQ6ZRE7JEGXXQl0",
+    authDomain: "ecolshop-972a6.firebaseapp.com",
+    databaseURL: "https://ecolshop-972a6-default-rtdb.firebaseio.com",
+    projectId: "ecolshop-972a6",
+    storageBucket: "ecolshop-972a6.appspot.com",
+    messagingSenderId: "76103641047",
+    appId: "1:76103641047:web:9746580fa86e40912a8d92"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig); // declarando != usando
+  const database = getDatabase(app);
+  const auth = getAuth();
+
+  signUp.addEventListener('click', (e) => {
+
+    var email = document.getElementById('txtEmail').value;
+    var senha = document.getElementById('txtSenha').value;
+    var username = document.getElementById('txtNome').value;
+
+    var cpf = document.getElementById('txtCPF').value;
+    var dt_nasc = document.getElementById('txtDataNascimento').value;
+    var tel = document.getElementById('txtTelefone').value;
+    var cep = document.getElementById('txtCEP').value;
+    var numero = document.getElementById('txtNumero').value;
+    var complemento = document.getElementById('txtComplemento').value;
+    var referencia = document.getElementById('txtReferencia').value;
+    var confirmar_senha = document.getElementById('txtNome').value;
+
+    createUserWithEmailAndPassword(auth, email, senha, cpf, dt_nasc, tel, cep, numero, complemento, referencia, confirmar_senha)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+
+        set(ref(database, 'users/' + user.uid), {
+          username: username,
+          email: email,
+          password: senha, //falta ver se a senha e a confirmacao da senha sao iguais
+          cpf: cpf, // checar se o cpf está no correto XXX.XXX.XXX-XX
+          dt_nasc: dt_nasc,
+          telefone: tel,
+          cep: cep, // ver se o cep esta correto XXXXX-XX
+          numero: numero,
+          complemento: complemento,
+          referencia: referencia,
+        })
+
+        alert('Usuario criado!');
+        //window.location.href='confirmarcadastro.html'
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+
+        alert(errorMessage);
+        // ..
+      });
+  });
+
+</script>
+
+</html>
