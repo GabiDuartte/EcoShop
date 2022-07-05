@@ -1,0 +1,13 @@
+var pegar_dados = async () => {
+    email = document.getElementById('txtEmail').value;
+    senha = document.getElementById('txtSenha').value;
+    const response = await fetch(`http://localhost:3000/usuario/${email}`);
+    var usuario = await response.json();
+    //console.log(usuario);
+
+    if (senha == usuario.senha) {
+        window.location.href = 'cliente_dados.html'
+    } else { alert("Senha inválida!") }
+
+    new Usr(usuario);
+}
